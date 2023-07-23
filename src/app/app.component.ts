@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { GetTextService } from 'src/services/get-text.service';
+import { TextInputAndVisualizerComponent } from 'src/components/text-input-and-visualizer/text-input-and-visualizer.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   title = 'speed typing test';
 
-  constructor(private getTextS: GetTextService){}
+  constructor(){}
 
   ngOnInit() {
-   console.log(this.getTextS.getText());
-
   }
 
 }
